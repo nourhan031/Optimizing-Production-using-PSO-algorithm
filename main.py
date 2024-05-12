@@ -124,6 +124,15 @@ for n in range(num_iterations):
             fitness = Evaluate_fitness(position[j][0],position[j][1])
             xBest[j] = max(xBest[j],fitness)
 
+            # update global best fitness and the corresponding positions if
+            # the current particle's fitness is better than the current global best
+
+            """
+             if no particle in an iteration improves upon the global best,
+             then s1 and s2 will not be updated, 
+             and their values from the previous iteration will be appended 
+             to bestS1 and bestS2 (hence the zeroes appearing in the output) -> TO BE FIXED
+            """
             if fitness > bestFitness:
                 bestFitness = fitness
                 s1 = position[j][0]
