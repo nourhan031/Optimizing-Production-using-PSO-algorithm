@@ -10,8 +10,8 @@ def triangular_membership(x, min_val, peak_val, max_val):
     return np.clip(y, 0, 1)
 
 # Define the range of values for the cost
-x_C1 = np.linspace(170, 195, 225)
-x_C2 = np.linspace(200, 225, 250)
+x_C1 = np.linspace(160, 210, 100)
+x_C2 = np.linspace(210, 250, 100)
 
 # Parameters for the triangular membership functions for C1
 C1_min = 180  # a
